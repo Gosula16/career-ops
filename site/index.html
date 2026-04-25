@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Career-Ops | AI Job Search Command Center</title>
+  <meta name="description" content="Career-Ops turns an AI coding CLI into a job search command center for evaluating roles, tailoring resumes, scanning portals, and tracking the pipeline.">
+  <meta property="og:title" content="Career-Ops | AI Job Search Command Center">
+  <meta property="og:description" content="Evaluate roles, generate tailored resumes, scan portals, and track your pipeline with an AI-assisted local workflow.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#top">Career-Ops</a>
+        <div class="toplinks">
+          <a href="https://github.com/Gosula16/career-ops" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#setup">Setup</a>
+          <a href="#features">Features</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">AI job search workflow</p>
+          <h1>Turn your coding agent into a focused career command center.</h1>
+          <p class="lede">
+            Career-Ops helps you evaluate roles, tailor ATS-friendly resumes, scan portals,
+            and track every application without turning your search into a spreadsheet swamp.
+          </p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/Gosula16/career-ops" target="_blank" rel="noreferrer">View Repository</a>
+            <a class="button button-secondary" href="#setup">Get Started</a>
+          </div>
+          <ul class="stats">
+            <li><strong>740+</strong><span>job listings evaluated</span></li>
+            <li><strong>100+</strong><span>personalized CVs generated</span></li>
+            <li><strong>1</strong><span>dream role landed</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="assets/hero-banner.jpg" alt="Career-Ops banner">
+          <div class="hero-card-copy">
+            <p>Built for a selective search, not spray-and-pray.</p>
+            <span>Human in the loop. AI for filtering, drafting, and momentum.</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section-dark" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">What it does</p>
+          <h2>Everything needed to run a disciplined search from one repo.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Role evaluation</h3>
+            <p>Score jobs with structured fit criteria instead of gut feel and scattered notes.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tailored CV PDFs</h3>
+            <p>Generate ATS-friendly resume variants tuned to each role and company context.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Portal scanning</h3>
+            <p>Search configured companies and boards across Greenhouse, Ashby, Lever, and more.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Batch processing</h3>
+            <p>Review multiple listings in parallel and keep the queue moving without losing quality.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tracker integrity</h3>
+            <p>Normalize statuses, deduplicate entries, and keep one source of truth for the pipeline.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Interview prep</h3>
+            <p>Accumulate reusable STAR stories and company-specific notes as you evaluate opportunities.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-highlight">
+        <div class="workflow">
+          <div>
+            <p class="eyebrow">Workflow</p>
+            <h2>Paste a job URL. Let the system route the rest.</h2>
+            <ol class="workflow-list">
+              <li>Detect the role archetype and evaluate fit against your CV.</li>
+              <li>Produce a report, tailored PDF, and tracker update.</li>
+              <li>Use scan, batch, apply, and interview-prep modes as the search deepens.</li>
+            </ol>
+          </div>
+          <div class="workflow-visual">
+            <img src="assets/demo.gif" alt="Career-Ops terminal demo">
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="setup">
+        <div class="section-heading">
+          <p class="eyebrow">Quick start</p>
+          <h2>Run it locally in minutes.</h2>
+        </div>
+        <div class="setup-grid">
+          <div class="setup-card">
+            <h3>Install</h3>
+            <pre><code>git clone https://github.com/Gosula16/career-ops.git
+cd career-ops
+npm install
+npx playwright install chromium</code></pre>
+          </div>
+          <div class="setup-card">
+            <h3>Configure</h3>
+            <pre><code>copy config\profile.example.yml config\profile.yml
+copy templates\portals.example.yml portals.yml</code></pre>
+            <p>Add your `cv.md`, then personalize the system through your preferred AI CLI.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-plain">
+        <div class="cta-panel">
+          <div>
+            <p class="eyebrow">Open source</p>
+            <h2>Use the repo, adapt the modes, and make the workflow yours.</h2>
+            <p>
+              This site is only the front door. The real power lives in the local command center:
+              your profile, your CV, your tracker, and your chosen AI assistant.
+            </p>
+          </div>
+          <a class="button button-primary" href="https://github.com/Gosula16/career-ops" target="_blank" rel="noreferrer">Open on GitHub</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
